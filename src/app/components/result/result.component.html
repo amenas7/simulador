@@ -1,0 +1,84 @@
+<div class="result-container" *ngIf="result()">
+  <div class="result-card">
+    <div class="result-header">
+      <h1>Simulacro de Examen Completado</h1>
+      <div class="status-badge" [ngClass]="getStatusClass()">
+        {{ getStatusMessage() }}
+      </div>
+    </div>
+
+    <div class="result-summary">
+      <div class="summary-card percentage" [ngClass]="getStatusClass()">
+        <div class="summary-value">{{ result()!.percentage }}%</div>
+        <div class="summary-label">Porcentaje de Aciertos</div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card correct">
+          <div class="summary-value">{{ result()!.correctAnswers }}</div>
+          <div class="summary-label">Respuestas Correctas</div>
+        </div>
+
+        <div class="summary-card incorrect">
+          <div class="summary-value">{{ result()!.incorrectAnswers }}</div>
+          <div class="summary-label">Respuestas Incorrectas</div>
+        </div>
+
+        <div class="summary-card total">
+          <div class="summary-value">{{ result()!.totalQuestions }}</div>
+          <div class="summary-label">Total de Preguntas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-details">
+      <h2>Detalle de Respuestas</h2>
+      <div class="details-list">
+        <div
+          *ngFor="let detail of result()!.details"
+          class="detail-item"
+          [class.correct]="detail.isCorrect"
+          [class.incorrect]="!detail.isCorrect"
+        >
+          <div class="detail-header">
+            <span class="detail-number">Pregunta {{ detail.questionNumber }}</span>
+            <span class="detail-status">
+              <span *ngIf="detail.isCorrect" class="status-icon correct">✓</span>
+              <span *ngIf="!detail.isCorrect" class="status-icon incorrect">✗</span>
+            </span>
+          </div>
+          
+          <div class="detail-question">
+            <p class="question-text">{{ detail.questionText }}</p>
+          </div>
+
+          <div class="detail-alternatives">
+            <div
+              *ngFor="let alt of detail.alternatives"
+              class="alternative-item"
+              [class.selected]="alt.id === detail.selectedAnswer"
+              [class.correct]="alt.id === detail.correctAnswer"
+              [class.wrong]="alt.id === detail.selectedAnswer && !detail.isCorrect"
+            >
+              <span class="alt-id">{{ alt.id }}</span>
+              <span class="alt-text">{{ alt.texto }}</span>
+              <span class="alt-badge" *ngIf="alt.id === detail.correctAnswer">
+                ✓ Correcta
+              </span>
+              <span class="alt-badge wrong-badge" *ngIf="alt.id === detail.selectedAnswer && !detail.isCorrect">
+                Tu respuesta
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-actions">
+      <button class="btn btn-primary" (click)="restartExam()">
+        Volver a intentar
+      </button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,66 @@
+<div class="upload-container">
+  <div class="upload-card">
+    <div class="upload-header">
+      <h1>Simulacro de Preguntas</h1>
+      <p>Carga un archivo JSON con las preguntas del examen para comenzar</p>
+    </div>
+
+    <div 
+      class="upload-area" 
+      [class.dragging]="isDragging()"
+      (click)="triggerFileInput()"
+      (dragover)="onDragOver($event)"
+      (dragleave)="onDragLeave($event)"
+      (drop)="onDrop($event)"
+    >
+      <input
+        type="file"
+        id="fileInput"
+        accept=".json"
+        (change)="onFileSelected($event)"
+        style="display: none"
+      />
+      
+      <div class="upload-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="17 8 12 3 7 8"></polyline>
+          <line x1="12" y1="3" x2="12" y2="15"></line>
+        </svg>
+      </div>
+
+      <div class="upload-text">
+        <p class="upload-main" *ngIf="!isDragging()">Haz clic para seleccionar un archivo</p>
+        <p class="upload-main dragging-text" *ngIf="isDragging()">Suelta el archivo aquí</p>
+        <p class="upload-sub" *ngIf="!isDragging()">o arrastra y suelta un archivo JSON aquí</p>
+      </div>
+
+      <div class="file-info" *ngIf="fileName()">
+        <span class="file-icon">📄</span>
+        <span class="file-name">{{ fileName() }}</span>
+      </div>
+    </div>
+
+    <div class="error-message" *ngIf="errorMessage()">
+      <span class="error-icon">⚠️</span>
+      <span>{{ errorMessage() }}</span>
+    </div>
+
+    <div class="format-info">
+      <h3>Formato esperado del archivo JSON:</h3>
+      <pre><code>[
+  {{'{'}}"numeroPregunta": 1,
+    "pregunta": "¿Texto de la pregunta?",
+    "alternativas": [
+      {{'{'}}"id": "A", "texto": "Opción A"{{'}'}} ,
+      {{'{'}}"id": "B", "texto": "Opción B"{{'}'}} ,
+      {{'{'}}"id": "C", "texto": "Opción C"{{'}'}} ,
+      {{'{'}}"id": "D", "texto": "Opción D"{{'}'}}
+    ],
+    "respuestaCorrecta": "A"
+  {{'}'}}
+]</code></pre>
+    </div>
+  </div>
+</div>
+

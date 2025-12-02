@@ -1,0 +1,735 @@
+[
+    {
+      "numeroPregunta": 1,
+      "pregunta": "Bajo el modelo de responsabilidad compartida, ¿de cuál de los siguientes es responsable el cliente?",
+      "alternativas": [
+        { "id": "A", "texto": "Asegurarse de que las unidades de disco se limpien después de su uso." },
+        { "id": "B", "texto": "Asegurarse de que el firmware se actualiza en los dispositivos de hardware." },
+        { "id": "C", "texto": "Garantizar que los datos estén encriptados en reposo." },
+        { "id": "D", "texto": "Asegurar que los cables de red sean de categoría seis o superior." }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 2,
+      "pregunta": "¿El uso de qué característica o servicio de AWS permite a las empresas realizar un seguimiento y categorizar el gasto en un nivel detallado?",
+      "alternativas": [
+        { "id": "A", "texto": "Etiquetas de asignación de costos" },
+        { "id": "B", "texto": "Facturación consolidada" },
+        { "id": "C", "texto": "Presupuestos de AWS" },
+        { "id": "D", "texto": "Mercado de AWS" }
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "numeroPregunta": 3,
+      "pregunta": "¿Qué servicio almacena objetos, proporciona acceso en tiempo real a esos objetos y ofrece capacidades de control de versiones y ciclo de vida?",
+      "alternativas": [
+        { "id": "A", "texto": "Amazon Glacier" },
+        { "id": "B", "texto": "AWS Storage Gateway" },
+        { "id": "C", "texto": "Amazon S3" },
+        { "id": "D", "texto": "Amazon EBS" }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 4,
+      "pregunta": "¿Qué equipo de AWS ayuda a los clientes a acelerar la adopción de la nube a través de compromisos pagados en cualquiera de las áreas de práctica especializadas?",
+      "alternativas": [
+        { "id": "A", "texto": "AWS Enterprise Support" },
+        { "id": "B", "texto": "AWS Solutions Architects" },
+        { "id": "C", "texto": "AWS Professional Services" },
+        { "id": "D", "texto": "AWS Account Managers" }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 5,
+      "pregunta": "Un cliente quiere diseñar y crear una nueva carga de trabajo en AWS, pero no tiene la experiencia técnica interna. ¿Qué programa puede aprovechar?",
+      "alternativas": [
+        { "id": "A", "texto": "AWS Partner Network Technology Partners" },
+        { "id": "B", "texto": "AWS Marketplace" },
+        { "id": "C", "texto": "AWS Partner Network Consulting Partners" },
+        { "id": "D", "texto": "AWS Service Catalog" }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 6,
+      "pregunta": "La distribución de cargas de trabajo entre varias zonas de disponibilidad es compatible con qué principio de diseño de arquitectura en la nube?",
+      "alternativas": [
+        { "id": "A", "texto": "Implementar automatización" },
+        { "id": "B", "texto": "Diseño para la agilidad" },
+        { "id": "C", "texto": "Diseño para la tolerancia al fallo" },
+        { "id": "D", "texto": "Implementar elasticidad" }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 7,
+      "pregunta": "¿Qué servicios de AWS pueden alojar una base de datos de Microsoft SQL Server? (Elija dos.)",
+      "alternativas": [
+        { "id": "A", "texto": "Amazon EC2" },
+        { "id": "B", "texto": "Amazon RDS" },
+        { "id": "C", "texto": "Amazon Aurora" },
+        { "id": "D", "texto": "Amazon Redshift" },
+        { "id": "E", "texto": "Amazon S3" }
+      ],
+      "respuestaCorrecta": "AB"
+    },
+    {
+      "numeroPregunta": 8,
+      "pregunta": "¿Cuál de las siguientes opciones inspecciona los entornos de AWS para encontrar oportunidades de ahorro y mejorar el rendimiento?",
+      "alternativas": [
+        { "id": "A", "texto": "AWS Cost Explorer" },
+        { "id": "B", "texto": "AWS Professional Services" },
+        { "id": "C", "texto": "Consolidated Billing" },
+        { "id": "D", "texto": "Detailed Billing" }
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "numeroPregunta": 9,
+      "pregunta": "¿Qué modelo de precios de Amazon EC2 permite utilizar licencias de software existentes vinculadas al servidor?",
+      "alternativas": [
+        { "id": "A", "texto": "Instancias de spot" },
+        { "id": "B", "texto": "Instancias reservadas" },
+        { "id": "C", "texto": "Servidores dedicados" },
+        { "id": "D", "texto": "Instancias bajo demanda" }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 10,
+      "pregunta": "¿Qué características de AWS hacen que sea rentable para cargas con demanda dinámica? (Elija dos.)",
+      "alternativas": [
+        { "id": "A", "texto": "Alta disponibilidad" },
+        { "id": "B", "texto": "Modelo de seguridad compartida" },
+        { "id": "C", "texto": "Elasticidad" },
+        { "id": "D", "texto": "Precios de pago por uso" },
+        { "id": "E", "texto": "Fiabilidad" }
+      ],
+      "respuestaCorrecta": "CD"
+    },
+    {
+      "numeroPregunta": 11,
+      "pregunta": "¿Qué servicio permite la auditoría mediante supervisión y registro continuo de la actividad de la cuenta?",
+      "alternativas": [
+        { "id": "A", "texto": "Amazon CloudWatch" },
+        { "id": "B", "texto": "AWS CloudTrail" },
+        { "id": "C", "texto": "AWS Config" },
+        { "id": "D", "texto": "AWS Health" }
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "numeroPregunta": 12,
+      "pregunta": "¿Cuáles son características de Amazon S3? (Elija dos.)",
+      "alternativas": [
+        { "id": "A", "texto": "Un sistema de archivos global" },
+        { "id": "B", "texto": "Un almacén de objetos" },
+        { "id": "C", "texto": "Un almacén de archivos local" },
+        { "id": "D", "texto": "Un sistema de archivos de red" },
+        { "id": "E", "texto": "Un sistema de almacenamiento duradero" }
+      ],
+      "respuestaCorrecta": "BE"
+    },
+    {
+      "numeroPregunta": 13,
+      "pregunta": "¿Qué servicios se pueden usar en arquitecturas híbridas de nube? (Elija dos.)",
+      "alternativas": [
+        { "id": "A", "texto": "Amazon Route 53" },
+        { "id": "B", "texto": "Virtual Private Gateway" },
+        { "id": "C", "texto": "Classic Load Balancer" },
+        { "id": "D", "texto": "Auto Scaling" },
+        { "id": "E", "texto": "CloudWatch default metrics" }
+      ],
+      "respuestaCorrecta": "AB"
+    },
+    {
+      "numeroPregunta": 14,
+      "pregunta": "¿Qué costos se incluyen al comparar el costo total de propiedad (TCO) de AWS con el local?",
+      "alternativas": [
+        { "id": "A", "texto": "Gestión de proyectos" },
+        { "id": "B", "texto": "Licencias de antivirus" },
+        { "id": "C", "texto": "Seguridad del centro de datos" },
+        { "id": "D", "texto": "Desarrollo de software" }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 15,
+      "pregunta": "Una empresa usa una base de datos auto hospedada que requiere apagado nocturno. ¿Qué servicio debe usar?",
+      "alternativas": [
+        { "id": "A", "texto": "Amazon Redshift" },
+        { "id": "B", "texto": "Amazon DynamoDB" },
+        { "id": "C", "texto": "Amazon EC2 con instance store" },
+        { "id": "D", "texto": "Amazon EC2 con EBS" }
+      ],
+      "respuestaCorrecta": "D"
+    },
+    {
+      "numeroPregunta": 16,
+      "pregunta": "¿Cuál es la relación correcta entre regiones, zonas de disponibilidad y ubicaciones de borde?",
+      "alternativas": [
+        { "id": "A", "texto": "Los centros de datos contienen regiones" },
+        { "id": "B", "texto": "Las regiones contienen zonas de disponibilidad" },
+        { "id": "C", "texto": "Las zonas de disponibilidad contienen ubicaciones de borde" },
+        { "id": "D", "texto": "Las ubicaciones de borde contienen regiones" }
+      ],
+      "respuestaCorrecta": "B"
+    }
+  ,  {
+    "numeroPregunta": 17,
+    "pregunta": "¿Qué herramientas de AWS ayudan a estimar los costos? (Elija tres.)",
+    "alternativas": [
+      { "id": "A", "texto": "Informe de facturación detallado" },
+      { "id": "B", "texto": "Etiquetas de asignación de costos" },
+      { "id": "C", "texto": "Calculadora mensual sencilla de AWS" },
+      { "id": "D", "texto": "Calculadora del costo total de propiedad (TCO) de AWS" },
+      { "id": "E", "texto": "Estimador de costos" }
+    ],
+    "respuestaCorrecta": "BCD"
+  },
+  {
+    "numeroPregunta": 18,
+    "pregunta": "¿Cuáles son ventajas de la facturación consolidada de AWS? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "La capacidad de recibir una factura para múltiples cuentas" },
+      { "id": "B", "texto": "Los límites de servicio aumentan por defecto en todas las cuentas" },
+      { "id": "C", "texto": "Un descuento fijo en la factura mensual" },
+      { "id": "D", "texto": "Posibles descuentos por volumen, ya que se combina el uso en todas las cuentas" },
+      { "id": "E", "texto": "Extensión automática del plan de soporte a todas las cuentas" }
+    ],
+    "respuestaCorrecta": "AD"
+  },
+  {
+    "numeroPregunta": 19,
+    "pregunta": "¿Qué modelo de precios de instancia reservada proporciona el mayor ahorro promedio frente a bajo demanda?",
+    "alternativas": [
+      { "id": "A", "texto": "Instancia reservada estándar 1 año sin pago inicial" },
+      { "id": "B", "texto": "IR convertibles 1 año todo por adelantado" },
+      { "id": "C", "texto": "Instancia reservada estándar 3 años todo por adelantado" },
+      { "id": "D", "texto": "IR convertibles 3 años sin pago inicial" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 20,
+    "pregunta": "En comparación con centros de datos tradicionales, AWS tiene:",
+    "alternativas": [
+      { "id": "A", "texto": "Mayor costo variable y mayor costo inicial" },
+      { "id": "B", "texto": "Costos fijos de uso y menores costos iniciales" },
+      { "id": "C", "texto": "Menores costos variables y mayores costos iniciales" },
+      { "id": "D", "texto": "Costos variables más bajos y costos iniciales más bajos" }
+    ],
+    "respuestaCorrecta": "D"
+  },
+  {
+    "numeroPregunta": 21,
+    "pregunta": "La característica de las ubicaciones de borde es que:",
+    "alternativas": [
+      { "id": "A", "texto": "Alojan instancias EC2 más cerca de los usuarios" },
+      { "id": "B", "texto": "Ayudan a reducir la latencia y mejorar el rendimiento" },
+      { "id": "C", "texto": "Almacenan en caché datos que cambian sin llegar al origen" },
+      { "id": "D", "texto": "Actualizan los datos diariamente" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 22,
+    "pregunta": "¿Qué opción puede limitar el acceso a un bucket de S3 a usuarios específicos?",
+    "alternativas": [
+      { "id": "A", "texto": "Un par de claves pública y privada" },
+      { "id": "B", "texto": "Amazon Inspector" },
+      { "id": "C", "texto": "Políticas de AWS IAM" },
+      { "id": "D", "texto": "Grupos de seguridad" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 23,
+    "pregunta": "¿Qué acciones relacionadas con seguridad están disponibles sin costo?",
+    "alternativas": [
+      { "id": "A", "texto": "Llamar al soporte de AWS" },
+      { "id": "B", "texto": "Solicitar un taller a AWS Professional Services" },
+      { "id": "C", "texto": "Acceder a foros, blogs y whitepapers" },
+      { "id": "D", "texto": "Asistir a clases de AWS en la universidad" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 24,
+    "pregunta": "¿Qué modelo de RI permite cambiar atributos siempre que el valor final sea igual o mayor?",
+    "alternativas": [
+      { "id": "A", "texto": "RI dedicadas" },
+      { "id": "B", "texto": "RI programadas" },
+      { "id": "C", "texto": "RI convertibles" },
+      { "id": "D", "texto": "RI estándar" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 25,
+    "pregunta": "¿Qué característica de AWS reduce el costo total de propiedad (TCO) del cliente?",
+    "alternativas": [
+      { "id": "A", "texto": "Modelo de seguridad compartida" },
+      { "id": "B", "texto": "Tenencia individual" },
+      { "id": "C", "texto": "Computación elástica" },
+      { "id": "D", "texto": "Cifrado" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 26,
+    "pregunta": "¿Qué servicio se escala automáticamente con un aumento esperado en el tráfico web?",
+    "alternativas": [
+      { "id": "A", "texto": "AWS CodePipeline" },
+      { "id": "B", "texto": "Elastic Load Balancing" },
+      { "id": "C", "texto": "Amazon EBS" },
+      { "id": "D", "texto": "AWS Direct Connect" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 27,
+    "pregunta": "¿Dónde se encuentran los documentos de conformidad como un informe SOC 1?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon Inspector" },
+      { "id": "B", "texto": "AWS CloudTrail" },
+      { "id": "C", "texto": "AWS Artifact" },
+      { "id": "D", "texto": "AWS Certificate Manager" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 28,
+    "pregunta": "Bajo el modelo de responsabilidad compartida, ¿cuáles son responsabilidad del cliente? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "Parches al sistema operativo RDS" },
+      { "id": "B", "texto": "Cifrado del lado del cliente" },
+      { "id": "C", "texto": "Capacitación del personal del centro de datos" },
+      { "id": "D", "texto": "Configuración de listas de control de acceso de red" },
+      { "id": "E", "texto": "Mantenimiento ambiental del centro de datos" }
+    ],
+    "respuestaCorrecta": "BD"
+  },
+  {
+    "numeroPregunta": 29,
+    "pregunta": "¿Qué patrón es recomendado para diseñar arquitecturas de alta disponibilidad?",
+    "alternativas": [
+      { "id": "A", "texto": "Asegurar conectividad de baja latencia entre componentes" },
+      { "id": "B", "texto": "Ejecutar suficientes instancias para carga máxima" },
+      { "id": "C", "texto": "Diseñar para tolerar fallos de componentes individuales" },
+      { "id": "D", "texto": "Usar una aplicación monolítica" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 30,
+    "pregunta": "Según prácticas recomendadas, ¿cómo debe diseñarse una aplicación en AWS?",
+    "alternativas": [
+      { "id": "A", "texto": "Componentes estrechamente acoplados" },
+      { "id": "B", "texto": "Componentes poco acoplados" },
+      { "id": "C", "texto": "Componentes acoplados con poca frecuencia" },
+      { "id": "D", "texto": "Componentes acoplados con frecuencia" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 31,
+    "pregunta": "¿Qué métodos admite AWS para agregar seguridad a usuarios IAM? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "Implementar Amazon Rekognition" },
+      { "id": "B", "texto": "Uso de recursos protegidos por AWS Shield" },
+      { "id": "C", "texto": "Bloqueo de acceso mediante grupos de seguridad" },
+      { "id": "D", "texto": "Uso de autenticación multifactor (MFA)" },
+      { "id": "E", "texto": "Aplicación de políticas de caducidad de contraseña" }
+    ],
+    "respuestaCorrecta": "DE"
+  },
+  {
+    "numeroPregunta": 32,
+    "pregunta": "¿Qué servicios deben usarse para lectura/escritura de datos en constante cambio? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon Glacier" },
+      { "id": "B", "texto": "Amazon RDS" },
+      { "id": "C", "texto": "AWS Snowball" },
+      { "id": "D", "texto": "Amazon Redshift" },
+      { "id": "E", "texto": "Amazon EFS" }
+    ],
+    "respuestaCorrecta": "BE"
+  }
+,
+{
+    "numeroPregunta": 33,
+    "pregunta": "¿Cuál es una de las ventajas de Amazon Relational Database Service (Amazon RDS)?",
+    "alternativas": [
+      { "id": "A", "texto": "Simplifica las tareas de administración de bases de datos relacionales." },
+      { "id": "B", "texto": "Proporciona 99.999999999999% de fiabilidad y durabilidad." },
+      { "id": "C", "texto": "Escala automáticamente las bases de datos para las cargas." },
+      { "id": "D", "texto": "Permite ajustar dinámicamente CPU y RAM." }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 34,
+    "pregunta": "Un cliente necesita ejecutar una base de datos MySQL que se escale fácilmente. ¿Qué servicio debe utilizar?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon Aurora" },
+      { "id": "B", "texto": "Amazon Redshift" },
+      { "id": "C", "texto": "Amazon DynamoDB" },
+      { "id": "D", "texto": "Amazon ElastiCache" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 35,
+    "pregunta": "¿Cuál componente de la infraestructura global de AWS consta de uno o más centros de datos discretos interconectados con baja latencia?",
+    "alternativas": [
+      { "id": "A", "texto": "Zona de disponibilidad" },
+      { "id": "B", "texto": "Ubicación de borde" },
+      { "id": "C", "texto": "Región" },
+      { "id": "D", "texto": "Redes privadas" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 36,
+    "pregunta": "¿Cuál de las siguientes opciones es un control compartido entre el cliente y AWS?",
+    "alternativas": [
+      { "id": "A", "texto": "Proporcionar una clave para cifrado del lado cliente en S3" },
+      { "id": "B", "texto": "Configuración de una instancia Amazon EC2" },
+      { "id": "C", "texto": "Controles ambientales del centro de datos" },
+      { "id": "D", "texto": "Sensibilización y formación" }
+    ],
+    "respuestaCorrecta": "D"
+  },
+  {
+    "numeroPregunta": 37,
+    "pregunta": "¿Cuántas zonas de disponibilidad deben aprovisionarse para lograr alta disponibilidad?",
+    "alternativas": [
+      { "id": "A", "texto": "Un mínimo de una" },
+      { "id": "B", "texto": "Un mínimo de dos" },
+      { "id": "C", "texto": "Un mínimo de tres" },
+      { "id": "D", "texto": "Un mínimo de cuatro o más" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 38,
+    "pregunta": "Una ventaja de mover infraestructura del centro de datos a AWS es que:",
+    "alternativas": [
+      { "id": "A", "texto": "Permite eliminar todas las facturas de TI" },
+      { "id": "B", "texto": "Permite poner un servidor en cada centro de datos del cliente" },
+      { "id": "C", "texto": "Permite que la empresa se centre en actividades comerciales" },
+      { "id": "D", "texto": "Permite dejar los servidores sin parchear" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 39,
+    "pregunta": "¿Cuál es la opción de almacenamiento duradera y de menor costo para retener backups de bases de datos?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon S3" },
+      { "id": "B", "texto": "Amazon Glacier" },
+      { "id": "C", "texto": "Amazon EBS" },
+      { "id": "D", "texto": "Amazon EC2 Instance Store" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 40,
+    "pregunta": "¿Qué característica de IAM permite a desarrolladores obtener acceso a AWS mediante la CLI?",
+    "alternativas": [
+      { "id": "A", "texto": "Claves API" },
+      { "id": "B", "texto": "Llaves de acceso" },
+      { "id": "C", "texto": "Nombres de usuario y contraseñas" },
+      { "id": "D", "texto": "Claves SSH" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 41,
+    "pregunta": "¿Cuál es un servicio de base de datos NoSQL rápido y confiable?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon Redshift" },
+      { "id": "B", "texto": "Amazon RDS" },
+      { "id": "C", "texto": "Amazon DynamoDB" },
+      { "id": "D", "texto": "Amazon S3" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 42,
+    "pregunta": "¿Cuál es un ejemplo de agilidad en la nube de AWS?",
+    "alternativas": [
+      { "id": "A", "texto": "Acceso a varios tipos de instancia" },
+      { "id": "B", "texto": "Acceso a servicios gestionados" },
+      { "id": "C", "texto": "Facturación consolidada" },
+      { "id": "D", "texto": "Disminuir el tiempo de adquisición de recursos" }
+    ],
+    "respuestaCorrecta": "D"
+  },
+  {
+    "numeroPregunta": 43,
+    "pregunta": "¿Qué servicio debe utilizarse para consolidar y administrar varias cuentas de AWS?",
+    "alternativas": [
+      { "id": "A", "texto": "AWS IAM" },
+      { "id": "B", "texto": "AWS Organizations" },
+      { "id": "C", "texto": "AWS Schema Conversion Tool" },
+      { "id": "D", "texto": "AWS Config" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 44,
+    "pregunta": "¿Qué enfoque para transcodificar muchos videos sigue los principios de arquitectura de AWS?",
+    "alternativas": [
+      { "id": "A", "texto": "Usar muchas instancias en paralelo" },
+      { "id": "B", "texto": "Usar una sola instancia grande" },
+      { "id": "C", "texto": "Usar hardware dedicado" },
+      { "id": "D", "texto": "Usar instancias GPU grandes" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 45,
+    "pregunta": "¿De qué proceso de auditoría es AWS el único responsable?",
+    "alternativas": [
+      { "id": "A", "texto": "Políticas de IAM" },
+      { "id": "B", "texto": "Seguridad física" },
+      { "id": "C", "texto": "Políticas de depósito de S3" },
+      { "id": "D", "texto": "Registros de CloudTrail" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 46,
+    "pregunta": "¿Qué característica de AWS soporta requisitos de baja latencia a nivel internacional?",
+    "alternativas": [
+      { "id": "A", "texto": "Tolerancia a fallos" },
+      { "id": "B", "texto": "Alcance mundial" },
+      { "id": "C", "texto": "Pago por uso" },
+      { "id": "D", "texto": "Alta disponibilidad" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 47,
+    "pregunta": "¿Cuál es responsabilidad del cliente en el modelo de responsabilidad compartida?",
+    "alternativas": [
+      { "id": "A", "texto": "Aplicar parches a la infraestructura subyacente" },
+      { "id": "B", "texto": "Seguridad física" },
+      { "id": "C", "texto": "Aplicar parches a instancias EC2" },
+      { "id": "D", "texto": "Aplicar parches a infraestructura de red" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 48,
+    "pregunta": "Un cliente con varias cuentas de AWS quiere aprovechar descuentos por volumen. ¿Qué debe usar?",
+    "alternativas": [
+      { "id": "A", "texto": "Crear una cuenta global y mover todos los recursos" },
+      { "id": "B", "texto": "Comprar instancias reservadas por 3 años" },
+      { "id": "C", "texto": "Facturación consolidada de AWS Organizations" },
+      { "id": "D", "texto": "Plan de soporte Enterprise" }
+    ],
+    "respuestaCorrecta": "C"
+  }
+,
+{
+    "numeroPregunta": 49,
+    "pregunta": "¿Cuáles de las siguientes son características de Amazon CloudWatch Logs? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "Resúmenes de Amazon SNS" },
+      { "id": "B", "texto": "Análisis gratuitos de Amazon Elasticsearch Service" },
+      { "id": "C", "texto": "Proporcionado sin cargo" },
+      { "id": "D", "texto": "Monitorización en tiempo real" },
+      { "id": "E", "texto": "Amazon EFS" }
+    ],
+    "respuestaCorrecta": "CD"
+  },
+  {
+    "numeroPregunta": 50,
+    "pregunta": "¿Qué servicio es un DNS administrado por AWS?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon Route 53" },
+      { "id": "B", "texto": "Amazon Neptune" },
+      { "id": "C", "texto": "Amazon SageMaker" },
+      { "id": "D", "texto": "Amazon Lightsail" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 51,
+    "pregunta": "¿De qué es responsable el cliente según el modelo de responsabilidad compartida?",
+    "alternativas": [
+      { "id": "A", "texto": "Controles de acceso físico" },
+      { "id": "B", "texto": "Cifrado de datos" },
+      { "id": "C", "texto": "Eliminación segura de dispositivos de almacenamiento" },
+      { "id": "D", "texto": "Gestión de riesgos ambientales" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 52,
+    "pregunta": "Un cliente debe elegir una región de AWS. ¿Qué factores influyen? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "Reducción de latencia para usuarios" },
+      { "id": "B", "texto": "Presentación de la solicitud en el idioma local" },
+      { "id": "C", "texto": "Cumplimiento de soberanía de datos" },
+      { "id": "D", "texto": "Costos de enfriamiento en climas cálidos" },
+      { "id": "E", "texto": "Proximidad a la oficina del cliente" }
+    ],
+    "respuestaCorrecta": "AC"
+  },
+  {
+    "numeroPregunta": 53,
+    "pregunta": "¿Qué servicio puede usarse como opción de bajo costo para alojar sitios web estáticos?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon Glacier" },
+      { "id": "B", "texto": "Amazon DynamoDB" },
+      { "id": "C", "texto": "Amazon Elastic File System (EFS)" },
+      { "id": "D", "texto": "Amazon S3" }
+    ],
+    "respuestaCorrecta": "D"
+  },
+  {
+    "numeroPregunta": 54,
+    "pregunta": "¿Qué modelo de precios EC2 ofrece descuentos de hasta el 90%?",
+    "alternativas": [
+      { "id": "A", "texto": "Instancias reservadas" },
+      { "id": "B", "texto": "Bajo demanda" },
+      { "id": "C", "texto": "Servidores dedicados" },
+      { "id": "D", "texto": "Instancias de spot" }
+    ],
+    "respuestaCorrecta": "D"
+  },
+  {
+    "numeroPregunta": 55,
+    "pregunta": "¿Qué servicio puede ejecutar una base de datos relacional administrada por el cliente?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon EC2" },
+      { "id": "B", "texto": "Amazon Route 53" },
+      { "id": "C", "texto": "Amazon ElastiCache" },
+      { "id": "D", "texto": "Amazon DynamoDB" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 56,
+    "pregunta": "Una empresa busca almacenamiento de datos escalable. ¿Qué solución satisface esa necesidad?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon S3" },
+      { "id": "B", "texto": "Amazon DynamoDB" },
+      { "id": "C", "texto": "Amazon Kinesis" },
+      { "id": "D", "texto": "Amazon Redshift" }
+    ],
+    "respuestaCorrecta": "D"
+  },
+  {
+    "numeroPregunta": 57,
+    "pregunta": "¿Qué declaración describe mejor Elastic Load Balancing?",
+    "alternativas": [
+      { "id": "A", "texto": "Traduce un nombre de dominio a IP" },
+      { "id": "B", "texto": "Distribuye el tráfico entrante entre instancias EC2" },
+      { "id": "C", "texto": "Recopila métricas de EC2" },
+      { "id": "D", "texto": "Ajusta automáticamente el número de instancias" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 58,
+    "pregunta": "¿Cuáles son formas válidas de interactuar con servicios de AWS? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "Interfaz de línea de comandos (CLI)" },
+      { "id": "B", "texto": "Local" },
+      { "id": "C", "texto": "Kits de desarrollo de software (SDKs)" },
+      { "id": "D", "texto": "Software como servicio (SaaS)" },
+      { "id": "E", "texto": "Híbrido" }
+    ],
+    "respuestaCorrecta": "AC"
+  },
+  {
+    "numeroPregunta": 59,
+    "pregunta": "Las múltiples regiones de AWS son un ejemplo de:",
+    "alternativas": [
+      { "id": "A", "texto": "Agilidad" },
+      { "id": "B", "texto": "Infraestructura mundial" },
+      { "id": "C", "texto": "Elasticidad" },
+      { "id": "D", "texto": "Pago por uso" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 60,
+    "pregunta": "¿Qué servicios pueden servir grandes cantidades de contenido de video con la latencia más baja? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "AWS Storage Gateway" },
+      { "id": "B", "texto": "Amazon S3" },
+      { "id": "C", "texto": "Amazon EFS" },
+      { "id": "D", "texto": "Amazon Glacier" },
+      { "id": "E", "texto": "Amazon CloudFront" }
+    ],
+    "respuestaCorrecta": "BE"
+  },
+  {
+    "numeroPregunta": 61,
+    "pregunta": "Servidores web en Amazon EC2 acceden a una aplicación en un centro de datos corporativo. ¿Qué modelo es este?",
+    "alternativas": [
+      { "id": "A", "texto": "Nativo de la nube" },
+      { "id": "B", "texto": "Red de socios" },
+      { "id": "C", "texto": "Arquitectura híbrida" },
+      { "id": "D", "texto": "Infraestructura como servicio" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 62,
+    "pregunta": "¿Cuál es la ventaja de usar servicios administrados como RDS o ElastiCache?",
+    "alternativas": [
+      { "id": "A", "texto": "Requieren que el cliente reemplace instancias fallidas" },
+      { "id": "B", "texto": "Tienen mejor rendimiento que servicios autogestionados" },
+      { "id": "C", "texto": "Simplifican parches y actualizaciones del sistema operativo" },
+      { "id": "D", "texto": "No requieren optimizar selecciones de instancias" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 63,
+    "pregunta": "¿Qué servicio proporciona almacenamiento de objetos en línea altamente durable y prácticamente ilimitado?",
+    "alternativas": [
+      { "id": "A", "texto": "Amazon Redshift" },
+      { "id": "B", "texto": "Amazon EFS" },
+      { "id": "C", "texto": "Amazon ECS" },
+      { "id": "D", "texto": "Amazon S3" }
+    ],
+    "respuestaCorrecta": "D"
+  },
+  {
+    "numeroPregunta": 64,
+    "pregunta": "¿Qué entidad IAM está asociada a un ID de clave de acceso y clave secreta al usar la CLI?",
+    "alternativas": [
+      { "id": "A", "texto": "Grupo IAM" },
+      { "id": "B", "texto": "Usuario IAM" },
+      { "id": "C", "texto": "Rol IAM" },
+      { "id": "D", "texto": "Política IAM" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 65,
+    "pregunta": "¿Qué servicios de seguridad ofrece AWS? (Elija dos.)",
+    "alternativas": [
+      { "id": "A", "texto": "Tokens físicos MFA" },
+      { "id": "B", "texto": "Comprobaciones de seguridad de AWS Trusted Advisor" },
+      { "id": "C", "texto": "Cifrado de datos" },
+      { "id": "D", "texto": "Pruebas de penetración automatizadas" },
+      { "id": "E", "texto": "Detección de contenido protegido por derechos de autor en S3" }
+    ],
+    "respuestaCorrecta": "BC"
+  }
+]
+
+  

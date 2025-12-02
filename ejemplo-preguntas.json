@@ -1,0 +1,58 @@
+[
+  {
+    "numeroPregunta": 1,
+    "pregunta": "¿Qué es Angular?",
+    "alternativas": [
+      { "id": "A", "texto": "Un framework de JavaScript para desarrollo de aplicaciones web" },
+      { "id": "B", "texto": "Una biblioteca de CSS" },
+      { "id": "C", "texto": "Un lenguaje de programación" },
+      { "id": "D", "texto": "Un sistema operativo" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 2,
+    "pregunta": "¿Cuál es el comando para crear un nuevo proyecto Angular?",
+    "alternativas": [
+      { "id": "A", "texto": "npm create angular" },
+      { "id": "B", "texto": "ng new nombre-proyecto" },
+      { "id": "C", "texto": "angular init" },
+      { "id": "D", "texto": "npm install angular" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 3,
+    "pregunta": "¿Qué son los componentes en Angular?",
+    "alternativas": [
+      { "id": "A", "texto": "Archivos de configuración" },
+      { "id": "B", "texto": "Bloques de construcción básicos que controlan una porción de la pantalla" },
+      { "id": "C", "texto": "Variables globales" },
+      { "id": "D", "texto": "Funciones asíncronas" }
+    ],
+    "respuestaCorrecta": "B"
+  },
+  {
+    "numeroPregunta": 4,
+    "pregunta": "¿Qué decorador se usa para definir un componente en Angular?",
+    "alternativas": [
+      { "id": "A", "texto": "@NgModule" },
+      { "id": "B", "texto": "@Injectable" },
+      { "id": "C", "texto": "@Component" },
+      { "id": "D", "texto": "@Directive" }
+    ],
+    "respuestaCorrecta": "C"
+  },
+  {
+    "numeroPregunta": 5,
+    "pregunta": "¿Qué es TypeScript?",
+    "alternativas": [
+      { "id": "A", "texto": "Un superset de JavaScript que añade tipado estático" },
+      { "id": "B", "texto": "Una base de datos" },
+      { "id": "C", "texto": "Un framework CSS" },
+      { "id": "D", "texto": "Un servidor web" }
+    ],
+    "respuestaCorrecta": "A"
+  }
+]
+

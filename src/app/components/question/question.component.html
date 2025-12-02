@@ -1,0 +1,56 @@
+<div class="question-container" *ngIf="currentQuestion()">
+  <div class="question-header">
+    <div class="progress-info">
+      <span class="question-number">Pregunta {{ currentQuestion()!.numeroPregunta }}</span>
+      <span class="progress">{{ getProgress() }}</span>
+    </div>
+  </div>
+
+  <div class="question-content">
+    <h2 class="question-text">{{ currentQuestion()!.pregunta }}</h2>
+
+    <div class="alternatives">
+      <div
+        *ngFor="let alt of currentQuestion()!.alternativas"
+        class="alternative"
+        [class.selected]="selectedAnswer() === alt.id"
+        [class.correct]="answered() && alt.id === currentQuestion()!.respuestaCorrecta"
+        [class.incorrect]="answered() && selectedAnswer() === alt.id && !isCorrect()"
+        [class.disabled]="answered()"
+        (click)="selectAnswer(alt.id)"
+      >
+        <div class="alternative-id">{{ alt.id }}</div>
+        <div class="alternative-text">{{ alt.texto }}</div>
+      </div>
+    </div>
+
+    <div class="feedback" *ngIf="showFeedback()">
+      <div class="feedback-message" [class.correct]="isCorrect()" [class.incorrect]="!isCorrect()">
+        <span *ngIf="isCorrect()">✓ Respuesta correcta</span>
+        <span *ngIf="!isCorrect()">
+          ✗ Respuesta incorrecta. La respuesta correcta es: <strong>{{ currentQuestion()!.respuestaCorrecta }}</strong>
+        </span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button
+        *ngIf="!answered()"
+        class="btn btn-primary"
+        [disabled]="!selectedAnswer()"
+        (click)="submitAnswer()"
+      >
+        Confirmar respuesta
+      </button>
+
+      <button
+        *ngIf="answered()"
+        class="btn btn-next"
+        (click)="nextQuestion()"
+      >
+        Siguiente pregunta
+      </button>
+    </div>
+  </div>
+</div>
+
