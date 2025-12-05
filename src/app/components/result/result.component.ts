@@ -23,6 +23,10 @@ export class ResultComponent implements OnInit {
     this.examService.resetExam();
   }
 
+  goToHome(): void {
+    this.examService.clearExam();
+  }
+
   getStatusClass(): string {
     const percentage = this.result()?.percentage || 0;
     if (percentage >= 80) return 'excellent';
@@ -37,6 +41,24 @@ export class ResultComponent implements OnInit {
     if (percentage >= 60) return 'Bien';
     if (percentage >= 40) return 'Regular';
     return 'Necesitas mejorar';
+  }
+
+  isAlternativeCorrect(altId: string, correctAnswer: string | string[]): boolean {
+    if (Array.isArray(correctAnswer)) {
+      return correctAnswer.includes(altId);
+    }
+    return altId === correctAnswer;
+  }
+
+  isAlternativeSelected(altId: string, selectedAnswer: string | string[]): boolean {
+    if (Array.isArray(selectedAnswer)) {
+      return selectedAnswer.includes(altId);
+    }
+    return altId === selectedAnswer;
+  }
+
+  isAlternativeWrong(altId: string, selectedAnswer: string | string[], correctAnswer: string | string[]): boolean {
+    return this.isAlternativeSelected(altId, selectedAnswer) && !this.isAlternativeCorrect(altId, correctAnswer);
   }
 }
 

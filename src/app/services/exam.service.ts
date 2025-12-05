@@ -28,11 +28,23 @@ export class ExamService {
     return questions.length > 0 && index < questions.length ? questions[index] : null;
   }
 
-  submitAnswer(selectedAnswer: string): boolean {
+  submitAnswer(selectedAnswer: string | string[]): boolean {
     const currentQuestion = this.getCurrentQuestion();
     if (!currentQuestion) return false;
 
-    const isCorrect = selectedAnswer === currentQuestion.respuestaCorrecta;
+    const isMultipleChoice = Array.isArray(currentQuestion.respuestaCorrecta);
+    let isCorrect = false;
+
+    if (isMultipleChoice && Array.isArray(selectedAnswer)) {
+      // Comparar arrays: deben tener los mismos elementos
+      const correctAnswers = (currentQuestion.respuestaCorrecta as string[]).sort();
+      const userAnswers = selectedAnswer.sort();
+      isCorrect = correctAnswers.length === userAnswers.length &&
+                  correctAnswers.every((ans, index) => ans === userAnswers[index]);
+    } else if (!isMultipleChoice && typeof selectedAnswer === 'string') {
+      // Comparar strings
+      isCorrect = selectedAnswer === currentQuestion.respuestaCorrecta;
+    }
     
     const userAnswer: UserAnswer = {
       questionNumber: currentQuestion.numeroPregunta,
@@ -40,7 +52,8 @@ export class ExamService {
       alternatives: currentQuestion.alternativas,
       selectedAnswer,
       isCorrect,
-      correctAnswer: currentQuestion.respuestaCorrecta
+      correctAnswer: currentQuestion.respuestaCorrecta,
+      isMultipleChoice
     };
 
     this.userAnswers.update(answers => [...answers, userAnswer]);
@@ -74,6 +87,13 @@ export class ExamService {
   }
 
   resetExam(): void {
+    this.currentQuestionIndex.set(0);
+    this.userAnswers.set([]);
+    this.examFinished.set(false);
+  }
+
+  clearExam(): void {
+    this.questions.set([]);
     this.currentQuestionIndex.set(0);
     this.userAnswers.set([]);
     this.examFinished.set(false);

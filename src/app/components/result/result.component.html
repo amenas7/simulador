@@ -41,7 +41,10 @@
           [class.incorrect]="!detail.isCorrect"
         >
           <div class="detail-header">
-            <span class="detail-number">Pregunta {{ detail.questionNumber }}</span>
+            <div class="detail-header-left">
+              <span class="detail-number">Pregunta {{ detail.questionNumber }}</span>
+              <span class="detail-type" *ngIf="detail.isMultipleChoice">Selección Múltiple</span>
+            </div>
             <span class="detail-status">
               <span *ngIf="detail.isCorrect" class="status-icon correct">✓</span>
               <span *ngIf="!detail.isCorrect" class="status-icon incorrect">✗</span>
@@ -56,16 +59,16 @@
             <div
               *ngFor="let alt of detail.alternatives"
               class="alternative-item"
-              [class.selected]="alt.id === detail.selectedAnswer"
-              [class.correct]="alt.id === detail.correctAnswer"
-              [class.wrong]="alt.id === detail.selectedAnswer && !detail.isCorrect"
+              [class.selected]="isAlternativeSelected(alt.id, detail.selectedAnswer)"
+              [class.correct]="isAlternativeCorrect(alt.id, detail.correctAnswer)"
+              [class.wrong]="isAlternativeWrong(alt.id, detail.selectedAnswer, detail.correctAnswer)"
             >
               <span class="alt-id">{{ alt.id }}</span>
               <span class="alt-text">{{ alt.texto }}</span>
-              <span class="alt-badge" *ngIf="alt.id === detail.correctAnswer">
+              <span class="alt-badge" *ngIf="isAlternativeCorrect(alt.id, detail.correctAnswer)">
                 ✓ Correcta
               </span>
-              <span class="alt-badge wrong-badge" *ngIf="alt.id === detail.selectedAnswer && !detail.isCorrect">
+              <span class="alt-badge wrong-badge" *ngIf="isAlternativeWrong(alt.id, detail.selectedAnswer, detail.correctAnswer)">
                 Tu respuesta
               </span>
             </div>
@@ -75,7 +78,17 @@
     </div>
 
     <div class="result-actions">
+      <button class="btn btn-secondary" (click)="goToHome()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        Volver al inicio
+      </button>
       <button class="btn btn-primary" (click)="restartExam()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+        </svg>
         Volver a intentar
       </button>
     </div>

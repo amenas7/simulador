@@ -75,7 +75,7 @@
         { "id": "D", "texto": "Amazon Redshift" },
         { "id": "E", "texto": "Amazon S3" }
       ],
-      "respuestaCorrecta": "AB"
+      "respuestaCorrecta": ["A", "B"]
     },
     {
       "numeroPregunta": 8,
@@ -109,7 +109,7 @@
         { "id": "D", "texto": "Precios de pago por uso" },
         { "id": "E", "texto": "Fiabilidad" }
       ],
-      "respuestaCorrecta": "CD"
+      "respuestaCorrecta": ["C", "D"]
     },
     {
       "numeroPregunta": 11,
@@ -132,7 +132,7 @@
         { "id": "D", "texto": "Un sistema de archivos de red" },
         { "id": "E", "texto": "Un sistema de almacenamiento duradero" }
       ],
-      "respuestaCorrecta": "BE"
+      "respuestaCorrecta": ["B", "E"]
     },
     {
       "numeroPregunta": 13,
@@ -144,7 +144,7 @@
         { "id": "D", "texto": "Auto Scaling" },
         { "id": "E", "texto": "CloudWatch default metrics" }
       ],
-      "respuestaCorrecta": "AB"
+      "respuestaCorrecta": ["A", "B"]
     },
     {
       "numeroPregunta": 14,
@@ -189,7 +189,7 @@
       { "id": "D", "texto": "Calculadora del costo total de propiedad (TCO) de AWS" },
       { "id": "E", "texto": "Estimador de costos" }
     ],
-    "respuestaCorrecta": "BCD"
+    "respuestaCorrecta": ["B", "C", "D"]
   },
   {
     "numeroPregunta": 18,
@@ -201,7 +201,7 @@
       { "id": "D", "texto": "Posibles descuentos por volumen, ya que se combina el uso en todas las cuentas" },
       { "id": "E", "texto": "Extensión automática del plan de soporte a todas las cuentas" }
     ],
-    "respuestaCorrecta": "AD"
+    "respuestaCorrecta": ["A", "D"]
   },
   {
     "numeroPregunta": 19,
@@ -312,7 +312,7 @@
       { "id": "D", "texto": "Configuración de listas de control de acceso de red" },
       { "id": "E", "texto": "Mantenimiento ambiental del centro de datos" }
     ],
-    "respuestaCorrecta": "BD"
+    "respuestaCorrecta": ["B", "D"]
   },
   {
     "numeroPregunta": 29,
@@ -346,7 +346,7 @@
       { "id": "D", "texto": "Uso de autenticación multifactor (MFA)" },
       { "id": "E", "texto": "Aplicación de políticas de caducidad de contraseña" }
     ],
-    "respuestaCorrecta": "DE"
+    "respuestaCorrecta": ["D", "E"]
   },
   {
     "numeroPregunta": 32,
@@ -358,7 +358,7 @@
       { "id": "D", "texto": "Amazon Redshift" },
       { "id": "E", "texto": "Amazon EFS" }
     ],
-    "respuestaCorrecta": "BE"
+    "respuestaCorrecta": ["B", "E"]
   }
 ,
 {
@@ -548,7 +548,7 @@
       { "id": "D", "texto": "Monitorización en tiempo real" },
       { "id": "E", "texto": "Amazon EFS" }
     ],
-    "respuestaCorrecta": "CD"
+    "respuestaCorrecta": ["C", "D"]
   },
   {
     "numeroPregunta": 50,
@@ -582,7 +582,7 @@
       { "id": "D", "texto": "Costos de enfriamiento en climas cálidos" },
       { "id": "E", "texto": "Proximidad a la oficina del cliente" }
     ],
-    "respuestaCorrecta": "AC"
+    "respuestaCorrecta": ["A", "C"]
   },
   {
     "numeroPregunta": 53,
@@ -649,7 +649,7 @@
       { "id": "D", "texto": "Software como servicio (SaaS)" },
       { "id": "E", "texto": "Híbrido" }
     ],
-    "respuestaCorrecta": "AC"
+    "respuestaCorrecta": ["A", "C"]
   },
   {
     "numeroPregunta": 59,
@@ -672,7 +672,7 @@
       { "id": "D", "texto": "Amazon Glacier" },
       { "id": "E", "texto": "Amazon CloudFront" }
     ],
-    "respuestaCorrecta": "BE"
+    "respuestaCorrecta": ["B", "E"]
   },
   {
     "numeroPregunta": 61,
@@ -728,7 +728,7 @@
       { "id": "D", "texto": "Pruebas de penetración automatizadas" },
       { "id": "E", "texto": "Detección de contenido protegido por derechos de autor en S3" }
     ],
-    "respuestaCorrecta": "BC"
+    "respuestaCorrecta": ["B", "C"]
   }
 ]
 

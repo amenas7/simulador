@@ -1,0 +1,16 @@
+[
+    {
+      "numeroPregunta": 7,
+      "pregunta": "¿Qué servicios de AWS pueden alojar una base de datos de Microsoft SQL Server? (Elija dos.)",
+      "alternativas": [
+        { "id": "A", "texto": "Amazon EC2" },
+        { "id": "B", "texto": "Amazon RDS" },
+        { "id": "C", "texto": "Amazon Aurora" },
+        { "id": "D", "texto": "Amazon Redshift" },
+        { "id": "E", "texto": "Amazon S3" }
+      ],
+      "respuestaCorrecta": ["A", "B"]
+    }
+]
+
+  

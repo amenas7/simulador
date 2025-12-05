@@ -1,0 +1,58 @@
+[
+  {
+    "numeroPregunta": 1,
+    "pregunta": "¿Cuáles de los siguientes son lenguajes de programación?",
+    "alternativas": [
+      { "id": "A", "texto": "Python" },
+      { "id": "B", "texto": "HTML" },
+      { "id": "C", "texto": "JavaScript" },
+      { "id": "D", "texto": "CSS" }
+    ],
+    "respuestaCorrecta": ["A", "C"]
+  },
+  {
+    "numeroPregunta": 2,
+    "pregunta": "¿Qué es Angular?",
+    "alternativas": [
+      { "id": "A", "texto": "Un framework de JavaScript" },
+      { "id": "B", "texto": "Una biblioteca de CSS" },
+      { "id": "C", "texto": "Un lenguaje de programación" },
+      { "id": "D", "texto": "Un sistema operativo" }
+    ],
+    "respuestaCorrecta": "A"
+  },
+  {
+    "numeroPregunta": 3,
+    "pregunta": "Selecciona los métodos HTTP válidos:",
+    "alternativas": [
+      { "id": "A", "texto": "GET" },
+      { "id": "B", "texto": "POST" },
+      { "id": "C", "texto": "SEND" },
+      { "id": "D", "texto": "DELETE" }
+    ],
+    "respuestaCorrecta": ["A", "B", "D"]
+  },
+  {
+    "numeroPregunta": 4,
+    "pregunta": "¿Cuáles de estos son frameworks de CSS?",
+    "alternativas": [
+      { "id": "A", "texto": "Bootstrap" },
+      { "id": "B", "texto": "React" },
+      { "id": "C", "texto": "Tailwind CSS" },
+      { "id": "D", "texto": "Node.js" }
+    ],
+    "respuestaCorrecta": ["A", "C"]
+  },
+  {
+    "numeroPregunta": 5,
+    "pregunta": "¿Qué comando se usa para iniciar un servidor de desarrollo en Angular?",
+    "alternativas": [
+      { "id": "A", "texto": "ng start" },
+      { "id": "B", "texto": "ng serve" },
+      { "id": "C", "texto": "ng run" },
+      { "id": "D", "texto": "npm start" }
+    ],
+    "respuestaCorrecta": "B"
+  }
+]
+

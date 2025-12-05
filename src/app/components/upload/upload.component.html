@@ -1,8 +1,28 @@
 <div class="upload-container">
   <div class="upload-card">
     <div class="upload-header">
-      <h1>Simulacro de Preguntas</h1>
-      <p>Carga un archivo JSON con las preguntas del examen para comenzar</p>
+      <h1>Simulacro de Examen de Certificación</h1>
+      <p>Selecciona un examen predefinido o carga tu propio archivo JSON</p>
+    </div>
+
+    <div class="predefined-exams">
+      <h3>Exámenes Predefinidos</h3>
+      <div class="exam-buttons">
+        <button
+          *ngFor="let exam of predefinedExams"
+          class="exam-btn"
+          [class.loading]="loadingExam() === exam.id"
+          [disabled]="loadingExam() !== null"
+          (click)="loadPredefinedExam(exam.id, exam.file)"
+        >
+          <span *ngIf="loadingExam() !== exam.id">{{ exam.name }}</span>
+          <span *ngIf="loadingExam() === exam.id">Cargando...</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="divider">
+      <span>O carga tu propio archivo</span>
     </div>
 
     <div 
@@ -48,6 +68,7 @@
 
     <div class="format-info">
       <h3>Formato esperado del archivo JSON:</h3>
+      <p class="format-note">Selección única:</p>
       <pre><code>[
   {{'{'}}"numeroPregunta": 1,
     "pregunta": "¿Texto de la pregunta?",
@@ -58,6 +79,20 @@
       {{'{'}}"id": "D", "texto": "Opción D"{{'}'}}
     ],
     "respuestaCorrecta": "A"
+  {{'}'}}
+]</code></pre>
+      
+      <p class="format-note">Selección múltiple:</p>
+      <pre><code>[
+  {{'{'}}"numeroPregunta": 2,
+    "pregunta": "¿Selecciona todas las opciones correctas?",
+    "alternativas": [
+      {{'{'}}"id": "A", "texto": "Opción A"{{'}'}} ,
+      {{'{'}}"id": "B", "texto": "Opción B"{{'}'}} ,
+      {{'{'}}"id": "C", "texto": "Opción C"{{'}'}} ,
+      {{'{'}}"id": "D", "texto": "Opción D"{{'}'}}
+    ],
+    "respuestaCorrecta": ["A", "C"]
   {{'}'}}
 ]</code></pre>
     </div>

@@ -1,0 +1,217 @@
+[
+    {
+      "numeroPregunta": 196,
+      "pregunta": "¿Qué plan de AWS Support proporciona un conjunto completo de comprobaciones de AWS Trusted Advisor?",
+      "alternativas": [
+        { "id": "A", "texto": "Soporte para empresas y desarrolladores" },
+        { "id": "B", "texto": "Soporte empresarial y básico" },
+        { "id": "C", "texto": "Soporte básico y comercial" },
+        { "id": "D", "texto": "Soporte empresarial y comercial" }
+      ],
+      "respuestaCorrecta": "D"
+    },
+    {
+      "numeroPregunta": 197,
+      "pregunta": "¿Cuál de los siguientes servicios tiene funciones de mitigación de denegación de servicio distribuida (DDoS)? (Escoge dos.)",
+      "alternativas": [
+        { "id": "A", "texto": "AWS WAF" },
+        { "id": "B", "texto": "Amazon DynamoDB" },
+        { "id": "C", "texto": "Amazon EC2" },
+        { "id": "D", "texto": "Amazon CloudFront" },
+        { "id": "E", "texto": "Inspector Amazon" }
+      ],
+      "respuestaCorrecta": ["A", "D"]
+    },
+    {
+      "numeroPregunta": 198,
+      "pregunta": "Al crear un modelo de costo total de propiedad (TCO) en la nube, ¿qué elementos de costo se deben considerar para las cargas de trabajo que se ejecutan en AWS? (Elige tres.)",
+      "alternativas": [
+        { "id": "A", "texto": "calcular costos" },
+        { "id": "B", "texto": " costos de instalaciones" },
+        { "id": "C", "texto": " costos de almacenamiento" },
+        { "id": "D", "texto": " costos de transferencia de datos." },
+        { "id": "E", "texto": " Costos de infraestructura de red" },
+        { "id": "F", "texto": " Costos del ciclo de vida del hardware" }
+      ],
+      "respuestaCorrecta": ["A", "C", "E"]
+    },
+    {
+      "numeroPregunta": 199,
+      "pregunta": "¿Qué ventaja de ahorro de tiempo se ofrece con el uso de Amazon Rekognition?",
+      "alternativas": [
+        { "id": "A", "texto": " Amazon Rekognition proporciona marcas de agua automáticas de imágenes." },
+        { "id": "B", "texto": " Amazon Rekognition proporciona detección automática de objetos que aparecen en imágenes." },
+        { "id": "C", "texto": " Amazon Rekognition brinda la capacidad de cambiar el tamaño de millones de imágenes automáticamente." },
+        { "id": "D", "texto": " Amazon Rekognition utiliza Amazon Mechanical Turk para permitir que los humanos pujen por trabajos de detección de objetos." }
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "numeroPregunta": 200,
+      "pregunta": "Al comparar AWS con el costo total de propiedad (TCO) local, ¿qué costos se incluyen?",
+      "alternativas": [
+        { "id": "A", "texto": "Seguridad de centro de datos" },
+        { "id": "B", "texto": "Análisis de negocios" },
+        { "id": "C", "texto": "Gestión de proyectos" },
+        { "id": "D", "texto": " Administración del sistema operativo" }
+      ],
+      "respuestaCorrecta": "A"
+    },
+    {
+      "numeroPregunta": 201,
+      "pregunta": "Según el modelo de responsabilidad compartida de AWS, ¿de qué es responsable AWS?",
+      "alternativas": [
+        { "id": "A", "texto": "configuracion de Amazon VPC" },
+        { "id": "B", "texto": " gestión de código de la aplicación" },
+        { "id": "C", "texto": " Mantenimiento del tráfico de aplicaciones" },
+        { "id": "D", "texto": " Administrar la infraestructura de la red" }
+      ],
+      "respuestaCorrecta": "D"
+    },
+    {
+      "numeroPregunta": 202,
+      "pregunta": "¿Qué servicio se debe usar para estimar los costos de ejecutar un nuevo proyecto en AWS?",
+      "alternativas": [
+        { "id": "A", "texto": " Calculadora de costo total de propiedad de AWS" },
+        { "id": "B", "texto": " Calculadora mensual sencilla de  AWS" },
+        { "id": "C", "texto": " API de explorador de costos de AWS" },
+        { "id": "D", "texto": " presupuestos de AWS" }
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "numeroPregunta": 203,
+      "pregunta": "¿Qué herramienta de AWS identificará los grupos de seguridad que otorgan acceso a Internet sin restricciones a una lista limitada de puertos?",
+      "alternativas": [
+        { "id": "A", "texto": "Organizaciones de AWS" },
+        { "id": "B", "texto": " Asesor de confianza de AWS" },
+        { "id": "C", "texto": "informe de uso de AWS" },
+        { "id": "D", "texto": "Amazon EC2 dashboard" }
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "numeroPregunta": 204,
+      "pregunta": "¿Qué servicio de AWS se puede utilizar para generar alertas en función de una factura mensual estimada?",
+      "alternativas": [
+        { "id": "A", "texto": " configuración AWS" },
+        { "id": "B", "texto": "Amazon CloudWatch" },
+        { "id": "C", "texto": "AWS X-Ray" },
+        { "id": "D", "texto": "AWS CloudTrail" }
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "numeroPregunta": 205,
+      "pregunta": "¿Qué modelo de precios de Amazon EC2 ofrece el descuento MÁS significativo en comparación con las instancias bajo demanda?",
+      "alternativas": [
+        { "id": "A", "texto": " Instancias reservadas iniciales parciales por un período de 1 año" },
+        { "id": "B", "texto": " Todas las instancias reservadas iniciales por un período de 1 año" },
+        { "id": "C", "texto": "  Todas las instancias reservadas iniciales por un período de 3 años" },
+        { "id": "D", "texto": "  Sin instancias reservadas iniciales por un período de 3 años" }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+      "numeroPregunta": 206,
+      "pregunta": "¿Cuál de las siguientes es responsabilidad de AWS?",
+      "alternativas": [
+        { "id": "A", "texto": "Configuración de usuarios y grupos de AWS Identity and Access Management (IAM)" },
+        { "id": "B", "texto": " Destrucción física de los medios de almacenamiento al final de su vida útil" },
+        { "id": "C", "texto": "Aplicación de parches a los sistemas operativos invitados" },
+        { "id": "D", "texto": "Configuración de ajustes de seguridad en instancias de Amazon EC2" }
+      ],
+      "respuestaCorrecta": "B"
+    },
+    {
+      "numeroPregunta": 207,
+      "pregunta": "¿Cuál de las siguientes es una ventaja de usar AWS?",
+      "alternativas": [
+        { "id": "A", "texto": "AWS audita los datos de los usuarios." },
+        { "id": "B", "texto": "Los datos son automáticamente seguros." },
+        { "id": "C", "texto": "No hay que adivinar sobre las necesidades de capacidad." },
+        { "id": "D", "texto": "AWS gestiona las necesidades de cumplimiento." }
+      ],
+      "respuestaCorrecta": "C"
+    },
+    {
+        "numeroPregunta": 208,
+        "pregunta": "¿Qué servicio de AWS usaría un cliente con un sitio web estático para lograr una latencia más baja y velocidades de transferencia altas?",
+        "alternativas": [
+          { "id": "A", "texto": "AWS Lambda" },
+          { "id": "B", "texto": "Amazon DynamoDB Accelerator" },
+          { "id": "C", "texto": "Amazon Route 53" },
+          { "id": "D", "texto": "Amazon CloudFront" }
+        ],
+        "respuestaCorrecta": "D"
+      },
+      {
+        "numeroPregunta": 209,
+        "pregunta": "¿Qué servicios administran y automatizan las implementaciones de aplicaciones en AWS? (Escoge dos.)",
+        "alternativas": [
+          { "id": "A", "texto": "AWS Elastic Beanstalk" },
+          { "id": "B", "texto": "AWS CodeCommit" },
+          { "id": "C", "texto": "AWS Data Pipeline" },
+          { "id": "D", "texto": "AWS CloudFormation" },
+          { "id": "E", "texto": "AWS Config" }
+        ],
+        "respuestaCorrecta": ["A", "D"]
+      },
+      {
+        "numeroPregunta": 210,
+        "pregunta": "Un usuario desea orientación sobre los posibles ahorros al migrar desde las instalaciones a AWS. ¿Qué herramienta es adecuada para este escenario?",
+        "alternativas": [
+          { "id": "A", "texto": "presupuestos de AWS" },
+          { "id": "B", "texto": "esplorador de costos" },
+          { "id": "C", "texto": "Calculadora del costo total de propiedad (TCO) de AWS" },
+          { "id": "D", "texto": "Herramienta de buena arquitectura de AWS" }
+        ],
+        "respuestaCorrecta": "C"
+      },
+      {
+        "numeroPregunta": 211,
+        "pregunta": "¿Qué tareas debe realizar un cliente cuando sospecha que una cuenta de AWS se ha visto comprometida? (Escoge dos.)",
+        "alternativas": [
+          { "id": "A", "texto": " Rotar contraseñas y claves de acceso." },
+          { "id": "B", "texto": " Eliminar tokens MFA." },
+          { "id": "C", "texto": "Mueva los recursos a una región de AWS diferente." },
+          { "id": "D", "texto": "Elimine los recursos de AWS CloudTrail." },
+          { "id": "E", "texto": "Póngase en contacto con el soporte de AWS." }
+        ],
+        "respuestaCorrecta": ["A", "E"]
+      },
+      {
+        "numeroPregunta": 212,
+        "pregunta": "¿Cuál es un ejemplo de alta disponibilidad en la nube de AWS?",
+        "alternativas": [
+          { "id": "A", "texto": "Consultar el soporte técnico de AWS en cualquier momento del día o de la noche" },
+          { "id": "B", "texto": "Garantizar que una aplicación permanezca accesible, incluso si un recurso falla" },
+          { "id": "C", "texto": "Hacer que cualquier servicio de AWS esté disponible para su uso pagando a pedido" },
+          { "id": "D", "texto": "Implementación en cualquier parte del mundo utilizando regiones de AWS" }
+        ],
+        "respuestaCorrecta": "B"
+      },
+      {
+        "numeroPregunta": 213,
+        "pregunta": "Una empresa desea monitorear el uso de la CPU de sus recursos de Amazon EC2. ¿Qué servicio de AWS debería utilizar la empresa?",
+        "alternativas": [
+          { "id": "A", "texto": "Seguimiento de la nube de AWS" },
+          { "id": "B", "texto": "Amazon CloudWatch" },
+          { "id": "C", "texto": "Informe de uso y costo de AWS" },
+          { "id": "D", "texto": "Servicio de notificación simple de Amazon (Amazon SNS)" }
+        ],
+        "respuestaCorrecta": "B"
+      },
+      {
+        "numeroPregunta": 214,
+        "pregunta": "¿Qué es un rol de AWS Identity and Access Management (IAM)?",
+        "alternativas": [
+          { "id": "A", "texto": "Un usuario asociado con un recurso de AWS" },
+          { "id": "B", "texto": "Un grupo asociado con un recurso de AWS" },
+          { "id": "C", "texto": "Una entidad que define un conjunto de permisos para usar con un recurso de AWS" },
+          { "id": "D", "texto": "Una credencial de autenticación asociada con un token de autenticación multifactor (MFA)" }
+        ],
+        "respuestaCorrecta": "C"
+      }
+  ]
+  

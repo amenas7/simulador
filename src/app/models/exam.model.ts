@@ -2,7 +2,7 @@ export interface Question {
   numeroPregunta: number;
   pregunta: string;
   alternativas: Alternative[];
-  respuestaCorrecta: string;
+  respuestaCorrecta: string | string[]; // Soporta selección única o múltiple
 }
 
 export interface Alternative {
@@ -14,9 +14,10 @@ export interface UserAnswer {
   questionNumber: number;
   questionText: string;
   alternatives: Alternative[];
-  selectedAnswer: string;
+  selectedAnswer: string | string[]; // Soporta selección única o múltiple
   isCorrect: boolean;
-  correctAnswer: string;
+  correctAnswer: string | string[];
+  isMultipleChoice: boolean;
 }
 
 export interface ExamResult {

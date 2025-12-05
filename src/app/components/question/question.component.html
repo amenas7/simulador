@@ -1,24 +1,43 @@
 <div class="question-container" *ngIf="currentQuestion()">
   <div class="question-header">
-    <div class="progress-info">
-      <span class="question-number">Pregunta {{ currentQuestion()!.numeroPregunta }}</span>
-      <span class="progress">{{ getProgress() }}</span>
+    <div class="header-top">
+      <div class="progress-info">
+        <span class="question-number">Pregunta {{ currentQuestion()!.numeroPregunta }}</span>
+        <span class="progress">{{ getProgress() }}</span>
+      </div>
+      <button class="btn-home" (click)="goToHome()" title="Volver al inicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span class="btn-text">Inicio</span>
+      </button>
+    </div>
+    <div class="question-type" *ngIf="isMultipleChoice()">
+      <span class="type-badge-simple">Selección Múltiple</span>
     </div>
   </div>
 
   <div class="question-content">
     <h2 class="question-text">{{ currentQuestion()!.pregunta }}</h2>
+    
+    <p class="instruction-text" *ngIf="isMultipleChoice()">
+      Selecciona todas las respuestas correctas
+    </p>
 
     <div class="alternatives">
       <div
         *ngFor="let alt of currentQuestion()!.alternativas"
         class="alternative"
-        [class.selected]="selectedAnswer() === alt.id"
-        [class.correct]="answered() && alt.id === currentQuestion()!.respuestaCorrecta"
-        [class.incorrect]="answered() && selectedAnswer() === alt.id && !isCorrect()"
+        [class.selected]="isSelected(alt.id)"
+        [class.correct]="isAlternativeCorrect(alt.id)"
+        [class.incorrect]="isAlternativeIncorrect(alt.id)"
         [class.disabled]="answered()"
         (click)="selectAnswer(alt.id)"
       >
+        <div class="alternative-checkbox" *ngIf="isMultipleChoice()">
+          <input type="checkbox" [checked]="isSelected(alt.id)" [disabled]="answered()" (click)="$event.stopPropagation()">
+        </div>
         <div class="alternative-id">{{ alt.id }}</div>
         <div class="alternative-text">{{ alt.texto }}</div>
       </div>
@@ -28,7 +47,7 @@
       <div class="feedback-message" [class.correct]="isCorrect()" [class.incorrect]="!isCorrect()">
         <span *ngIf="isCorrect()">✓ Respuesta correcta</span>
         <span *ngIf="!isCorrect()">
-          ✗ Respuesta incorrecta. La respuesta correcta es: <strong>{{ currentQuestion()!.respuestaCorrecta }}</strong>
+          ✗ Respuesta incorrecta. La respuesta correcta es: <strong>{{ getCorrectAnswersText() }}</strong>
         </span>
       </div>
     </div>
@@ -37,7 +56,7 @@
       <button
         *ngIf="!answered()"
         class="btn btn-primary"
-        [disabled]="!selectedAnswer()"
+        [disabled]="selectedAnswers().length === 0"
         (click)="submitAnswer()"
       >
         Confirmar respuesta

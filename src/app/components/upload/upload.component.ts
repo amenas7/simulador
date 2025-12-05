@@ -16,6 +16,14 @@ export class UploadComponent {
   errorMessage = signal<string | null>(null);
   fileName = signal<string | null>(null);
   isDragging = signal<boolean>(false);
+  loadingExam = signal<number | null>(null);
+
+  predefinedExams = [
+    { id: 1, name: 'Examen 1', file: '1.json' },
+    { id: 2, name: 'Examen 2', file: '2.json' },
+    { id: 3, name: 'Examen 3', file: '3.json' },
+    { id: 4, name: 'Examen 4', file: '4.json' }
+  ];
 
   onFileSelected(event: Event): void {
     const input = event.target as HTMLInputElement;
@@ -96,6 +104,41 @@ export class UploadComponent {
   triggerFileInput(): void {
     const fileInput = document.getElementById('fileInput') as HTMLInputElement;
     fileInput?.click();
+  }
+
+  async loadPredefinedExam(examId: number, fileName: string): Promise<void> {
+    this.loadingExam.set(examId);
+    this.errorMessage.set(null);
+    this.fileName.set(fileName);
+
+    try {
+      const response = await fetch(`preguntas/${fileName}`);
+      
+      if (!response.ok) {
+        throw new Error(`No se pudo cargar el archivo ${fileName}`);
+      }
+
+      const questions = await response.json() as Question[];
+
+      // Validación básica
+      if (!Array.isArray(questions) || questions.length === 0) {
+        throw new Error('El archivo JSON debe contener un array de preguntas');
+      }
+
+      // Validar estructura de cada pregunta
+      questions.forEach((q, index) => {
+        if (!q.numeroPregunta || !q.pregunta || !q.alternativas || !q.respuestaCorrecta) {
+          throw new Error(`La pregunta ${index + 1} tiene una estructura inválida`);
+        }
+      });
+
+      this.examService.loadQuestions(questions);
+    } catch (error) {
+      this.errorMessage.set(`Error al cargar el examen: ${error instanceof Error ? error.message : 'archivo no encontrado'}`);
+      this.fileName.set(null);
+    } finally {
+      this.loadingExam.set(null);
+    }
   }
 }
 
