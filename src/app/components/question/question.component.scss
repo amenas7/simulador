@@ -138,6 +138,8 @@
   border-radius: 12px;
   padding: 2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: visible;
 
   @media (max-width: 768px) {
     padding: 1.5rem;
@@ -147,6 +149,7 @@
   @media (max-width: 576px) {
     padding: 1rem;
     border-radius: 6px;
+    padding-bottom: 2rem;
   }
 }
 
@@ -375,6 +378,16 @@
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 100;
+  padding: 0.5rem 0;
+
+  @media (max-width: 576px) {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+  }
 }
 
 .btn {
@@ -385,50 +398,73 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(0, 123, 255, 0.3);
+  min-height: 44px;
+  min-width: 44px;
 
   @media (max-width: 768px) {
-    padding: 0.625rem 1.5rem;
+    padding: 0.75rem 1.75rem;
     font-size: 0.95rem;
+    min-height: 48px;
   }
 
   @media (max-width: 576px) {
-    padding: 0.5rem 1.25rem;
-    font-size: 0.875rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.95rem;
     width: 100%;
+    min-height: 52px;
+    font-weight: 700;
   }
   
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
+    pointer-events: none;
   }
   
   &.btn-primary {
     background: #007bff;
     color: white;
     
-    &:hover:not(:disabled) {
+    &:hover:not(:disabled),
+    &:active:not(:disabled) {
       background: #0056b3;
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
 
       @media (max-width: 576px) {
         transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
       }
+    }
+
+    &:active:not(:disabled) {
+      transform: translateY(0);
     }
   }
   
   &.btn-next {
     background: #28a745;
     color: white;
+    -webkit-tap-highlight-color: rgba(40, 167, 69, 0.3);
     
-    &:hover {
+    &:hover,
+    &:active {
       background: #218838;
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
 
       @media (max-width: 576px) {
         transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(40, 167, 69, 0.3);
       }
+    }
+
+    &:active {
+      transform: translateY(0);
     }
   }
 }
