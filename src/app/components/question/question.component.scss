@@ -237,15 +237,46 @@
     display: flex;
     align-items: center;
     margin-right: 1rem;
+    position: relative;
 
     input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 24px;
+      height: 24px;
       cursor: pointer;
-      accent-color: #007bff;
+      border: 2.5px solid #007bff;
+      border-radius: 5px;
+      background-color: white;
+      position: relative;
+      transition: all 0.3s ease;
+
+      &:checked {
+        background-color: #007bff;
+        border-color: #007bff;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          width: 5px;
+          height: 11px;
+          border: solid white;
+          border-width: 0 2.5px 2.5px 0;
+          transform: translate(-50%, -60%) rotate(45deg);
+        }
+      }
+
+      &:hover:not(:disabled) {
+        border-color: #0056b3;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+      }
 
       &:disabled {
         cursor: default;
+        opacity: 0.7;
       }
     }
   }
